@@ -1,0 +1,125 @@
+.app {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: #555;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+
+    .sidebar {
+      flex: 0 0 200px;
+      background-color: #f4f4f4;
+      padding: 20px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 5px 0;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+
+    .content {
+      flex: 1;
+      padding: 0 20px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      form {
+        margin-top: 20px;
+
+        div {
+          margin-bottom: 15px;
+
+          label {
+            display: block;
+            margin-bottom: 5px;
+          }
+
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+          }
+
+          button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background-color: #555;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+}
